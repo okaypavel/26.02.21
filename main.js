@@ -18,7 +18,21 @@ arr.forEach((item, index) => {
 })
 console.log(indexJan)
 // zad na 6
-const tabZLiczbami = new Array(arr[0], arr[1], arr[2], arr[3], arr[5])
-console.log(tabZLiczbami)
-const tabZImionami = new Array(arr[4], arr[6])
-console.log(tabZImionami)
+let num = []
+let name = new Array()
+
+arr.forEach(item => {
+    if(typeof item === Number) {
+        num.push(item)
+    } else {
+        name.push(item)
+    }
+})
+
+const obj = {
+    name: "Jan",
+    age: 12
+}
+console.log(obj.name, obj.age)
+const arrWithObj = [obj]
+console.log(arrWithObj[0].name)
