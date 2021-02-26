@@ -1,7 +1,10 @@
 const arr = new Array(1, 15, 150, 1500, "Jan", 5525, "Henryk")
+console.log(arr)
 // 
 // zad 1
-console.log(arr)
+arr.forEach(item => {
+    console.log(item)
+})
 // zad 2
 const wiekszeOdJeden =
     arr.some(item => item > 1)
